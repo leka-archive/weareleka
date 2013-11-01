@@ -1,0 +1,93 @@
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+.carousel-bckgrnd-img (@url) {
+	background: url(@url) no-repeat center center;
+	background-size: cover;
+}
+
+.carousel-index {
+	.carousel-bckgrnd-img ("../img/carousel/Moti4.jpeg");
+}
+.carousel-about {
+	.carousel-bckgrnd-img ("../img/carousel/leka.jpeg");
+}
+.carousel-contact {
+	.carousel-bckgrnd-img ("../img/carousel/");
+}
+.carousel-jobs {
+	.carousel-bckgrnd-img ("../img/carousel/jobs.jpeg");
+}
+.carousel-blog {
+	.carousel-bckgrnd-img ("../img/carousel/img3.jpeg");
+}
+.carousel-press {
+	.carousel-bckgrnd-img ("../img/carousel/img4.jpeg");
+}
+
+.carousel {
+	margin-bottom: 2px;
+
+	.container {
+		position: relative;
+		z-index: 9;
+	}	// container
+
+	.item {
+		height: 500px;
+	}	// item
+
+	.carousel-caption {
+		background-color: transparent;
+		text-align: center;
+		position: static;
+		padding: 0 20px;
+		margin-top: 135px;
+		text-align: center;
+		color: @white;
+		font-size: 28px;
+		line-height: 1.25;
+		margin-bottom: 30px;
+
+		.carousel-byline {
+			margin-bottom: 20px;
+			font-size: 40px;
+			font-weight: 300;
+			line-height: 1.25;
+			color: @white;
+		}	// carousel-byline
+
+		h1 {
+			font-size: 70px;
+			font-weight: bold;
+			letter-spacing: -1px;
+			line-height: 1;
+		}	// h1
+
+		.lead, p {
+			font-size: 25px;
+			margin-bottom: 30px;
+			line-height: 1.25;
+			color: #fff;
+		}	// lead, p
+	}	// carousel-caption
+
+	.btn-primary {
+		margin-left: auto;
+		border: 0;
+		margin-right: auto;
+		padding: 19px 24px;
+		text-align: center;
+		font-size: 24px;
+		font-weight: 200;
+		background-image: none;
+		background-color: @blue;
+
+		&:hover,  &:active {
+			color: @white;
+			.dark(background, @pink, 10%)
+		}	// hover active
+	}	//btn-primary
+}	// carousel
+
+
+

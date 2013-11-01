@@ -1,0 +1,2 @@
+//This function .acive the <li> of the .nav in navbar.php
+$(function(){var e=window.location.pathname,t=e.substring(e.lastIndexOf("/")+1);$(".nav li a").each(function(){var e=$(this).attr("href");t===e&&$(this).parent().addClass("active")})});

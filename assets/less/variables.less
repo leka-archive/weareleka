@@ -1,0 +1,140 @@
+/*  VARIABLES
+-------------------------------------------------- */
+
+	/* LEKA COLORS
+	-------------------------------------------------- */
+
+	@green: #B0D02E;
+	@darkgreen: #98B916;
+	@pink: #E94366;
+	@orange: #F08F33;
+	@blue: #51A5CB;
+	@darkblue: #2C74D3; 
+	@yellow: #F7BE33;
+	
+	@grey: #333333;
+	@white: #FFF;
+	@black: #000;
+
+	/* LEKA COLORS LIGHTEN/DARKEN
+	-------------------------------------------------- */
+
+	// light is used to lighten a @color and to use it as color or as background-color
+	.light(@where, @color, @percent) when (@where = color) {
+		color: lighten(@color, @percent);
+	}
+	.light(@where, @color, @percent) when (@where = background) {
+		background-color: lighten(@color, @percent);
+	}
+
+	// dark is used to darken a @color and to use it as color or as background-color
+	.dark(@where, @color, @percent) when (@where = color) {
+		color: darken(@color, @percent);
+	}
+	.dark(@where, @color, @percent) when (@where = background) {
+		background-color: darken(@color, @percent);
+	}
+
+	// those are to be used whenever the @color your dealing with is neither for color: nor for background-color:
+	@green-10: lighten(@green, 10%);
+	@green-20: lighten(@green, 20%);
+	@green-30: lighten(@green, 30%);
+	@green-40: lighten(@green, 40%);
+	@green-50: lighten(@green, 50%);
+	@green-60: lighten(@green, 60%);
+	@green-70: lighten(@green, 70%);
+	@green-80: lighten(@green, 80%);
+	@green-90: lighten(@green, 90%);
+
+	@pink-10: lighten(@pink, 10%);
+	@pink-20: lighten(@pink, 20%);
+	@pink-30: lighten(@pink, 30%);
+	@pink-40: lighten(@pink, 40%);
+	@pink-50: lighten(@pink, 50%);
+	@pink-60: lighten(@pink, 60%);
+	@pink-70: lighten(@pink, 70%);
+	@pink-80: lighten(@pink, 80%);
+	@pink-90: lighten(@pink, 90%);
+
+	@orange-10: lighten(@orange, 10%);
+	@orange-20: lighten(@orange, 20%);
+	@orange-30: lighten(@orange, 30%);
+	@orange-40: lighten(@orange, 40%);
+	@orange-50: lighten(@orange, 50%);
+	@orange-60: lighten(@orange, 60%);
+	@orange-70: lighten(@orange, 70%);
+	@orange-80: lighten(@orange, 80%);
+	@orange-90: lighten(@orange, 90%);
+
+	@blue-10: lighten(@blue, 10%);
+	@blue-20: lighten(@blue, 20%);
+	@blue-30: lighten(@blue, 30%);
+	@blue-40: lighten(@blue, 40%);
+	@blue-50: lighten(@blue, 50%);
+	@blue-60: lighten(@blue, 60%);
+	@blue-70: lighten(@blue, 70%);
+	@blue-80: lighten(@blue, 80%);
+	@blue-90: lighten(@blue, 90%);
+
+	@grey-10: lighten(@grey, 10%);
+	@grey-20: lighten(@grey, 20%);
+	@grey-30: lighten(@grey, 30%);
+	@grey-40: lighten(@grey, 40%);
+	@grey-50: lighten(@grey, 50%);
+	@grey-60: lighten(@grey, 60%);
+	@grey-70: lighten(@grey, 70%);
+	@grey-80: lighten(@grey, 80%);
+	@grey-90: lighten(@grey, 90%);
+
+	@green-dark-10: darken(@green, 10%);
+	@green-dark-20: darken(@green, 20%);
+	@green-dark-30: darken(@green, 30%);
+	@green-dark-40: darken(@green, 40%);
+	@green-dark-50: darken(@green, 50%);
+	@green-dark-60: darken(@green, 60%);
+	@green-dark-70: darken(@green, 70%);
+	@green-dark-80: darken(@green, 80%);
+	@green-dark-90: darken(@green, 90%);
+
+	@pink-dark-10: darken(@pink, 10%);
+	@pink-dark-20: darken(@pink, 20%);
+	@pink-dark-30: darken(@pink, 30%);
+	@pink-dark-40: darken(@pink, 40%);
+	@pink-dark-50: darken(@pink, 50%);
+	@pink-dark-60: darken(@pink, 60%);
+	@pink-dark-70: darken(@pink, 70%);
+	@pink-dark-80: darken(@pink, 80%);
+	@pink-dark-90: darken(@pink, 90%);
+
+	@orange-dark-10: darken(@orange, 10%);
+	@orange-dark-20: darken(@orange, 20%);
+	@orange-dark-30: darken(@orange, 30%);
+	@orange-dark-40: darken(@orange, 40%);
+	@orange-dark-50: darken(@orange, 50%);
+	@orange-dark-60: darken(@orange, 60%);
+	@orange-dark-70: darken(@orange, 70%);
+	@orange-dark-80: darken(@orange, 80%);
+	@orange-dark-90: darken(@orange, 90%);
+
+	@blue-dark-10: darken(@blue, 10%);
+	@blue-dark-20: darken(@blue, 20%);
+	@blue-dark-30: darken(@blue, 30%);
+	@blue-dark-40: darken(@blue, 40%);
+	@blue-dark-50: darken(@blue, 50%);
+	@blue-dark-60: darken(@blue, 60%);
+	@blue-dark-70: darken(@blue, 70%);
+	@blue-dark-80: darken(@blue, 80%);
+	@blue-dark-90: darken(@blue, 90%);
+	
+	@black-10: darken(@white, 10%);
+	@black-20: darken(@white, 20%);
+	@black-30: darken(@white, 30%);
+	@black-40: darken(@white, 40%);
+	@black-50: darken(@white, 50%);
+	@black-60: darken(@white, 60%);
+	@black-70: darken(@white, 70%);
+	@black-80: darken(@white, 80%);
+	@black-90: darken(@white, 90%);
+
+
+
