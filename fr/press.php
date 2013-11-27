@@ -52,6 +52,60 @@
 			<div class="press">
 
 				<div class="row-fluid">
+					<div class="date span2">Septembre 2013</div>
+					<div class="media span3">Val d'Oise</div>
+					<div class="span7"><a href="http://www.valdoise.fr/TPL_CODE/TPL_ACTUALITE/PAR_TPL_IDENTIFIANT/158/7105-actualite.htm">Rencontre avec une start up : Ladislas de Toldi et Leka Smart Toys</a></div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="date span2">Septembre 2013</div>
+					<div class="media span3">Val d'Oise Magazine</div>
+					<div class="span7"><a href="http://www.nxtbook.fr/newpress/Eurokapi/Val_d_Oise_Magazine-131108/index.php?startid=26">Innover pour les enfants autistes</a></div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="date span2">Août 2013</div>
+					<div class="media span3">Le Parisien</div>
+					<div class="span7"><a href="http://www.leparisien.fr/espace-premium/val-d-oise-95/il-a-invente-un-jouet-pour-les-enfants-autistes-13-08-2013-3048803.php">Il a inventé un jouet pour les enfants atteints d'autisme</a></div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="date span2">Juillet 2013</div>
+					<div class="media span3">Dynamique Mag</div>
+					<div class="span7"><a href="http://www.dynamique-mag.com/article/projet-entreprise-original-utile-leka.4049">Leka : un projet d'entreprise original et utile</a></div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="date span2">Juillet 2013</div>
+					<div class="media span3">Mouves</div>
+					<div class="span7"><a href="http://mouves.org/2013/07/11/retour-grand-final-entrepreneuriat-social">Retour sur le Grand final du Tour des régions de l'entrepreneuriat social</a></div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="date span2">Juin 2013</div>
+					<div class="media span3">Côté Val d'Oise</div>
+					<div class="span7"><a href="http://www.cotevaldoise.fr/%C2%AB-leka-smart-toys-%C2%BB-projet-cergyssois-prime_910/">"Leka Smart Toys" projet cergyssois primé</a></div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="date span2">Mai 2013</div>
+					<div class="media span3">L'Entreprise</div>
+					<div class="span7"><a href="http://lentreprise.lexpress.fr/creation-entreprise/palmares-moovjee-trois-jeunes-entreprises-qui-ont-de-l-avenir_40827.html#content">Palmarès Moovjee : trois jeunes entreprises qui ont de l'avenir</a></div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="date span2">Mai 2013</div>
+					<div class="media span3">TiViPRO</div>
+					<div class="span7"><a href="http://www.tivipro.tv/chaine_sshome.php?id=1808922">Ladislas de Toldi, co-fondateur de Leka</a></div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="date span2">Avril 2013</div>
+					<div class="media span3">VO News</div>
+					<div class="span7"><a href="http://www.vonews.fr/article_21202-le-projet-leka-smart-toys-incube-au-sein-de%A0val-d-oise-incubation">Le projet Leka Smart Toys incubé au sein de Val d'Oise Incubation</a></div>
+				</div>
+
+				<div class="row-fluid">
 					<div class="date span2">Mai 2012</div>
 					<div class="media span3">Cergy Ma Ville</div>
 					<div class="span7"><a href="http://www.ville-cergy.fr/fileadmin/user_upload/publications/journal_ma_ville/maville173.pdf#page=11">La Ball.e des étudiants entrepreneurs</a></div>
