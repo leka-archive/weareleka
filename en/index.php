@@ -65,7 +65,7 @@
 
 				<h2>Work with us</h2>
 
-				<p>We love to share and collaborate. If we are here, it's only because we really want to act for autism. We love innovation, we love <a href="jobs.php" title="Leka recrute">people</a> with a story, a passion and a desire to change the world.</p>
+				<p>We love to share and collaborate. If we are here, it's only because we really want to act for autism. We love innovation, we love <a href="/en/jobs/index.php" title="Leka recrute">people</a> with a story, a passion and a desire to change the world.</p>
 
 			</div>	<!-- span4 -->
 
