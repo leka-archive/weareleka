@@ -52,7 +52,7 @@
 
 				<h2>Nous sommes Leka</h2>
 
-				<p>Leka est une jeune start-up située à Neuville dans le Val d'Oise. Nous travaillons sur ce projet depuis plus d'un an et nous allons bientôt sortir notre premier produit. <a href="contact.php" title="Faites coucou">Parlez-nous</a>, vous verrez, nous sommes très gentils !</p>
+				<p>Leka est une jeune start-up située à Neuville dans le Val d'Oise. Nous travaillons sur ce projet depuis plus d'un an et nous allons bientôt sortir notre premier produit. <a href="/fr/contact.php" title="Faites coucou">Parlez-nous</a>, vous verrez, nous sommes très gentils !</p>
 
 			</div>	<!-- span4 -->
 
@@ -68,7 +68,7 @@
 
 				<h2>Travaillez avec nous</h2>
 
-				<p>Nous aimons partager et collaborer. Si nous sommes là, c'est parce que nous voulons agir pour l'autisme. Nous aimons l'innovation, nous aimons <a href="jobs.php" title="Leka recrute">les gens</a> avec une histoire, une passion et une envie de changer le monde.</p>
+				<p>Nous aimons partager et collaborer. Si nous sommes là, c'est parce que nous voulons agir pour l'autisme. Nous aimons l'innovation, nous aimons <a href="/fr/jobs/index.php" title="Leka recrute">les gens</a> avec une histoire, une passion et une envie de changer le monde.</p>
 
 			</div>	<!-- span4 -->
 
