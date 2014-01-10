@@ -19,7 +19,7 @@
 
 					<div class="carousel-caption">
 
-						<h1>Voici Moti</h1>
+						<h1>Voici MOMO</h1>
 						<p class="carousel-byline">une nouvelle sorte de jeu, un nouvel ami</p>
 
 						<p class="lead">Moti est une sphere interactive, robotisée &amp; attentive à son environnement, qui se déplace de manière autonome</p>
