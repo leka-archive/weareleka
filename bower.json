@@ -1,0 +1,25 @@
+{
+  "name": "leka-assemble",
+  "version": "0.0.1",
+  "authors": [
+    "tinyladi <ladislas@weareleka.com>"
+  ],
+  "description": "bower dependencies",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "normalize-css": "~3.0.0",
+    "jqueryui": "~1.10.4",
+    "jquery-ui": "~1.10.4",
+    "bigvideo.js": "~1.0.6",
+    "modernizr": "~2.7.1",
+    "inuitcss": "~5.0.0"
+  }
+}
