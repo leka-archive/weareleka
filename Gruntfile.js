@@ -24,7 +24,9 @@ module.exports = function(grunt) {
 
 		config: {
 			src: 'src',
-			dist: 'dist'
+			dist: 'dist',
+			bower: 'bower_components',
+			css: '<%= config.src %>/css'
 		},
 
 		watch: {
