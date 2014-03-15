@@ -26,7 +26,13 @@ module.exports = function(grunt) {
 			src: 'src',
 			dist: 'dist',
 			bower: 'bower_components',
-			css: '<%= config.src %>/css'
+			srcCss: '<%= config.src %>/css',
+			srcImg: '<%= config.src %>/img',
+			srcVid: '<%= config.src %>/vid',
+			distJs: '<%= config.dist %>/assets/js',
+			distCss: '<%= config.dist %>/assets/css',
+			distImg: '<%= config.dist %>/assets/img',
+			distVid: '<%= config.dist %>/assets/vid'
 		},
 
 		watch: {
@@ -83,14 +89,56 @@ module.exports = function(grunt) {
 		sass: {
 			dist: {
 				files: {
-					'<%= config.dist %>/assets/css/style.css': '<%= config.src %>/css/style.scss'
+					'<%= config.distCss %>/style.css': '<%= config.srcCss %>/style.scss'
 				}
+			}
+		},
+
+		copy: {
+			jbigvideo: {
+				expand: true,
+				src: [
+					'<%= config.bower %>/bigvideo.js/lib/bigvideo.js',
+					'<%= config.bower %>/imagesloaded/imagesloaded.js',
+					'<%= config.bower %>/video.js/video.js',
+					'<%= config.bower %>/eventEmitter/EventEmitter.min.js',
+					'<%= config.bower %>/eventie/eventie.js'
+				],
+				dest: '<%= config.distJs %>/bigvideo/',
+				filter: 'isFile',
+				flatten: true
+			},
+			jquery: {
+				expand: true,
+				src: [
+					'<%= config.bower %>/jquery/dist/jquery.min.js',
+					'<%= config.bower %>/jquery-ui/ui/minified/jquery-ui.min.js',
+					'<%= config.bower %>/jquery-ui/ui/minified/jquery-ui.custom.min.js',
+					'<%= config.bower %>/modernizr/modernizr.js'
+				],
+				dest: '<%= config.distJs %>/vendor/',
+				filter: 'isFile',
+				flatten: true
+			},
+			img: {
+				expand: true,
+				src: '<%= config.srcImg %>/**',
+				dest: '<%= config.distImg %>/',
+				filter: 'isFile',
+				flatten: true
+			},
+			vid: {
+				expand: true,
+				src: '<%= config.srcVid%>/**',
+				dest: '<%= config.distVid %>/',
+				filter: 'isFile',
+				flatten: true
 			}
 		},
 
 		// Before generating any new files,
 		// remove any previously-created files.
-		clean: ['<%= config.dist %>/**/*.{html,xml,css}']
+		clean: ['<%= config.dist %>/**/*.{html,xml,css,js,png}']
 
 	});
 
@@ -99,10 +147,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	grunt.registerTask('server', [
 		'clean',
 		'sass',
+		'copy',
 		'assemble',
 		'connect:livereload',
 		'watch'
@@ -110,6 +160,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('build', [
 		'clean',
+		'copy',
 		'sass',
 		'assemble'
 	]);

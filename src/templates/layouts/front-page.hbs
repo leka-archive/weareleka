@@ -5,20 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{title}} • {{site.title}}</title>
 
-		<link rel="stylesheet" href="{{assets}}/css/style.css">
+		{{> html5-shim }}
 
-		{{> shim-respond }}
+		{{> modernizr-js }}
+		
+		<link rel="stylesheet" href="{{assets}}/css/style.css">
 
 	</head>
 	<body>
 
-		<div class="container theme-showcase" role="main">
-
-			{{> body }}
-
-		</div>
+		{{> body }}
 
 		<!-- jQuery -->
-		<script src="https://code.jquery.com/jquery.js"></script>
+		{{> jquery-js }}
+		{{> bigvideo-js }}
 	</body>
 </html>
