@@ -2,23 +2,55 @@
 component: bigvideo-js
 ---
 
-<script src="assets/js/bigvideo/EventEmitter.min.js"></script>
-<script src="assets/js/bigvideo/eventie.js"></script>
-<script src="assets/js/bigvideo/imagesloaded.js"></script>
-<script src="assets/js/bigvideo/video.js"></script>
-<script src="assets/js/bigvideo/bigvideo.js"></script>
+<!-- <script src="assets/js/bigvideo/EventEmitter.min.js"></script> -->
+<!-- <script src="assets/js/bigvideo/eventie.js"></script> -->
+<!-- <script src="assets/js/bigvideo/imagesloaded.js"></script> -->
+<!-- <!&#45;&#45; <script src="assets/js/bigvideo/video.js"></script> &#45;&#45;> -->
+<!-- <script src="//vjs.zencdn.net/4.3/video.js"></script> -->
+<!-- <script src="assets/js/bigvideo/bigvideo.js"></script> -->
+<!--  -->
+<!-- <script> -->
+<!--  -->
+<!-- $(function() { -->
+<!-- 	var BV = new $.BigVideo({useFlashForFirefox:false}); -->
+<!--  -->
+<!-- 	BV.init(); -->
+<!--  -->
+<!-- 	var vid = 'assets/vid/moti.mp4'; -->
+<!--  -->
+<!-- 	BV.show(vid,  {ambient:true}); -->
+<!--  -->
+<!-- }); -->
+<!--  -->
+<!-- </script> -->
 
 <script>
+var vidUrl = $("#splash > source").attr('src');
 
-$(function() {
-	var BV = new $.BigVideo({useFlashForFirefox:false});
-
-	BV.init();
-
-	var vid = 'assets/vid/moti.mp4';
-
-	BV.show(vid,  {ambient:true});
-
+$.get(vidUrl).fail(function() {
+	$("#splash").hide();
 });
 
+jQuery(document).ready(function () {
+	resizeVid();
+	$(window).resize(function() {
+		resizeVid();
+	});
+});
+
+$(function () {
+    $("#splash").bind("loadedmetadata", function () {
+        var width = this.videoWidth;
+        var height = this.videoHeight;
+        // ...
+    });
+});
+
+function resizeVid() {
+	var browserHeight = Math.round($(window).height());
+	var browserWidth = Math.round($(window).width());
+	// var videoHeight =
+	// var videoWidth =
+
+}
 </script>
