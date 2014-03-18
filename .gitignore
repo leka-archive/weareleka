@@ -20,3 +20,5 @@ node_modules
 *.sublime-*
 
 *dist/**
+
+.ftppass
