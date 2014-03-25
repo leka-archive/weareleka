@@ -1,3 +1,11 @@
 title: We Are Leka!
+authors: Ladislas de Toldi
 french: fr
 english: en
+
+assets: /assets
+js: /assets/js
+css: /assets/css
+img: /assets/img
+vid: /assets/vid
+

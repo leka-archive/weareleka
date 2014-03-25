@@ -52,5 +52,9 @@
     "site generator",
     "site builder",
     "grunt"
-  ]
+  ],
+  "dependencies": {
+    "grunt-sftp-deploy": "0.0.11",
+    "grunt-ftp-deploy": "^0.1.2"
+  }
 }

@@ -45,7 +45,7 @@ module.exports = function(grunt) {
 					livereload: '<%= connect.options.livereload %>'
 				},
 				files: [
-				'<%= config.dist %>/{,*/}*.html',
+					'<%= config.dist %>/{,*/}*.html',
 				'<%= config.dist %>/assets/{,*/}*.css',
 				'<%= config.dist %>/assets/{,*/}*.js',
 				'<%= config.dist %>/assets/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
@@ -95,19 +95,6 @@ module.exports = function(grunt) {
 		},
 
 		copy: {
-			jbigvideo: {
-				expand: true,
-				src: [
-					'<%= config.bower %>/bigvideo.js/lib/bigvideo.js',
-					'<%= config.bower %>/imagesloaded/imagesloaded.js',
-					'<%= config.bower %>/video.js/video.js',
-					'<%= config.bower %>/eventEmitter/EventEmitter.min.js',
-					'<%= config.bower %>/eventie/eventie.js'
-				],
-				dest: '<%= config.distJs %>/bigvideo/',
-				filter: 'isFile',
-				flatten: true
-			},
 			jquery: {
 				expand: true,
 				src: [
@@ -136,6 +123,18 @@ module.exports = function(grunt) {
 			}
 		},
 
+		'ftp-deploy': {
+			build: {
+				auth: {
+					host: 'ftp.leka-smarttoys.com',
+					port: 21,
+					authKey: 'leka'
+				},
+				src: 'dist',
+				dest: '/discovermoti'
+			}
+		},
+
 		// Before generating any new files,
 		// remove any previously-created files.
 		clean: ['<%= config.dist %>/**/*.{html,xml,css,js,png}']
@@ -148,12 +147,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-ftp-deploy');
 
 	grunt.registerTask('server', [
-		'clean',
-		'sass',
-		'copy',
-		'assemble',
+		'build',
 		'connect:livereload',
 		'watch'
 	]);
@@ -163,6 +160,10 @@ module.exports = function(grunt) {
 		'copy',
 		'sass',
 		'assemble'
+	]);
+
+	grunt.registerTask('deploy', [
+		'ftp-deploy'
 	]);
 
 	grunt.registerTask('default', [
