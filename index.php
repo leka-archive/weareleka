@@ -19,12 +19,13 @@
 
 					<div class="carousel-caption">
 
-						<p class="carousel-byline"> Révolutionner la façon de s’amuser et de progresser pour les enfants atteints de handicap et faciliter leur apprentissage et leur accompagnement.</p>
-						
-						<p class="lead"> Tout cela grâce à de nouvelles technologies adaptées, spécialisées et connectées </p>
-					
+						<p class="carousel-byline"> <br>Aider les enfants exceptionnels <br> à vivre une vie normale</p>
+
+						<p class="lead">Tout cela grâce à de nouvelles technologies adaptées, spécialisées et connectées</p>
+
 						<a class="btn btn-large btn-primary" title="Be ready to discover Moti" href="http://discovermoti.com">Découvrez Moti !</a>
-						<p> Moti est une sphère interactive, robotisée &amp; attentive à son environnement, qui se déplace de manière autonome</p>
+
+
 
 					</div>	<!-- carousel-caption -->
 
